@@ -2,4 +2,4 @@
 Here we provide a binary executor for  erika OS fuzzing, which is adapted from Rtkaller
 
 ### Run
-To fuzz erika requires essentially no configuration, however it do needs an extra LICENSE for t32 emulator. Run ```./fuzzer --help ``` to see different options.
+`rtkaller-erika` requires essentially no configuration, however it do needs an extra LICENSE for t32 emulator. Run ```./fuzzer --help ``` to see different options.
