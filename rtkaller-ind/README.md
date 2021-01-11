@@ -1,6 +1,6 @@
 ### Introduction
 Here we provide a binary executor for newly adapted traditional RTOSes fuzzing.
-The executor is ported from Rtkaller, and is currently support [FreeRTOS](https://github.com/FreeRTOS/FreeRTOS) and [Erika](https://github.com/evidence/erika3) fuzzing.
+The executor is ported from Rtkaller, currently supporting [FreeRTOS](https://github.com/FreeRTOS/FreeRTOS) and [Erika](https://github.com/evidence/erika3) fuzzing.
 
 The code diectory is constructed as follow:
 In src directory we provide necessary executor code, and in bin directory we provide 
