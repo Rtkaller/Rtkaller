@@ -15,4 +15,4 @@ Most of the documentation at this moment is related to the rt-linux kernel.
 
 - [Reported bugs](docs/buglist.md)
 
-For other RTOS fuzzing, check [Erika/FreeRTOS](rtkaller-erika/README.md) Fuzzing
+For other RTOS fuzzing, check [Erika/FreeRTOS](rtkaller-ind/README.md) Fuzzing
