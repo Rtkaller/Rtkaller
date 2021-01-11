@@ -1,6 +1,6 @@
 | RTOS Version         | Real-time Patch     | Vulnerability Type       | Module                                  | Rtkaller | Syzkaller | Pervious Unknown |
 |----------------------|---------------------|--------------------------|-----------------------------------------|----------|-----------|------------------|
-| FREERTOS-5.4.2       |                     | SIGSEGV                  | task/xTaskIncrementTick                 | ✓        |           | ✓                |
+| FreeRTOS-5.4.2       |                     | SIGSEGV                  | task/xTaskIncrementTick                 | ✓        |           | ✓                |
 | rt-linux-5.0-release | patch-5.0.7-rt4-rt5 | general protection fault | rbtree/rb\_insert\_color\_cached        | ✓        |           | ✓                |
 | rt-linux-5.6-ktsan   | patch-5.6.4-rt2-rt3 | kernel-panic             | mm/alloc\_pages\_nodemask               | ✓        | ✓         |                  |
 |                      |                     | stack segment fault      | mm/freelist\_dereference                | ✓        |           | ✓                |
