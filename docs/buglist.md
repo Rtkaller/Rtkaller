@@ -51,3 +51,6 @@
 |                      |                     | use-after-free           | fs/ext4\_xattr\_set\_entry              | ✓        | ✓         |                  |
 |                      |                     | use-after-free           | fs/ext4\_expand\_extra\_isize           | ✓        | ✓         |                  |
 |                      |                     | use-after-free           | drivers/n\_tty\_receive\_buf\_common    | ✓        | ✓         |                  |
+
+
+For more detail and reproductio, see [bug info](https://github.com/Rtkaller/Rtkaller/tree/main/docs/crashes)
