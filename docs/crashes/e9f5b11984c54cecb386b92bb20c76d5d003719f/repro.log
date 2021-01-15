@@ -1,3 +1,0 @@
-Warning: Permanently added '[localhost]:46733' (ECDSA) to the list of known hosts.
-executing program
-syzkaller login: [  931.232092] 001: audit: type=1400 audit(1602560129.735:8): avc:  denied  { execmem } for  pid=447 comm="syz-executor008" scontext=system_u:system_r:kernel_t:s0 tcontext=system_u:system_r:kernel_t:s0 tclass=process permissive=1
