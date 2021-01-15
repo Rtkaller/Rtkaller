@@ -1,0 +1,40 @@
+001: SELinux:  Context Q is not valid (left unmapped).
+001: netlink: 8 bytes leftover after parsing attributes in process `syz-executor.3'.
+001: SELinux:  Context threa is not valid (left unmapped).
+000: rcu: INFO: rcu_sched detected stalls on CPUs/tasks:
+000: 	(detected by 0, t=21002 jiffies, g=101629, q=190)
+000: rcu: All QSes seen, last rcu_sched kthread activity 21002 (4294870861-4294849859), jiffies_till_next_fqs=3, root ->qsmask 0x0
+000: swapper/0       R  running task    29112     0      0 0x80004000
+000: Call Trace:
+000:  <IRQ>
+000:  sched_show_task.cold+0x243/0x2b1
+000:  rcu_sched_clock_irq.cold+0x853/0x90b
+000:  update_process_times+0x24/0x60
+000:  tick_sched_handle+0x10f/0x150
+000:  tick_sched_timer+0x41/0x120
+000:  __hrtimer_run_queues+0x308/0x7c0
+000:  hrtimer_interrupt+0x2c9/0x6c0
+000:  smp_apic_timer_interrupt+0xd4/0x380
+000:  apic_timer_interrupt+0xf/0x20
+000:  </IRQ>
+000: RIP: 0010:default_idle+0x23/0x2c0
+000: Code: cc cc cc cc cc cc cc 41 56 41 55 65 44 8b 2d 64 e1 ae 6a 41 54 55 53 0f 1f 44 00 00 e9 07 00 00 00 0f 00 2d ef 23 4f 00 fb f4 <65> 44 8b 2d 45 e1 ae 6a 0f 1f 44 00 00 5b 5d 41 5c 41 5d 41 5e c3
+000: RSP: 0018:ffffffff96207db0 EFLAGS: 00000246 ORIG_RAX: ffffffffffffff13
+000: RAX: ffffffff9552d1f0 RBX: ffffffff9621a140 RCX: ffffffff9552de59
+000: RDX: 1ffffffff2c43428 RSI: 0000000000000008 RDI: ffffffff9621a140
+000: RBP: fffffbfff2c43428 R08: 0000000000000001 R09: fffffbfff2c43429
+000: R10: fffffbfff2c43428 R11: ffffffff9621a147 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000
+000:  do_idle+0x306/0x390
+000:  cpu_startup_entry+0x14/0x20
+000:  start_kernel+0x754/0x78e
+000:  secondary_startup_64+0xb6/0xc0
+000: rcu: rcu_sched kthread starved for 21002 jiffies! g101629 f0x2 RCU_GP_WAIT_FQS(5) ->state=0x0 ->cpu=1
+000: rcu: RCU grace-period kthread stack dump:
+000: rcu_sched       R  running task    29760    10      2 0x80004000
+000: Call Trace:
+000:  schedule+0xc6/0x290
+000:  schedule_timeout+0x2f3/0x860
+000:  rcu_gp_kthread+0x9e6/0x20c0
+000:  kthread+0x2ce/0x3d0
+000:  ret_from_fork+0x35/0x40

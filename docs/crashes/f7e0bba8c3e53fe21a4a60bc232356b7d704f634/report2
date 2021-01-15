@@ -1,0 +1,80 @@
+001: ==================================================================
+001: BUG: KASAN: use-after-free in n_tty_receive_buf_common+0x206e/0x2460
+001: Read of size 1 at addr ffff88806c16a280 by task syz-executor.1/10645
+001: 
+001: CPU: 1 PID: 10645 Comm: syz-executor.1 Not tainted 5.2.0-rt1+ #2
+001: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+001: Call Trace:
+001:  dump_stack+0x79/0xba
+001:  print_address_description+0x60/0x229
+001:  __kasan_report.cold.4+0x17/0x32
+001:  kasan_report+0x12/0x20
+001:  n_tty_receive_buf_common+0x206e/0x2460
+001:  tty_ldisc_receive_buf+0xa4/0x170
+001:  paste_selection+0x216/0x330
+001:  tioclinux+0x1d0/0x420
+001:  vt_ioctl+0x17e1/0x2450
+001:  tty_ioctl+0x486/0x1350
+001:  do_vfs_ioctl+0x1a4/0xfe0
+001:  ksys_ioctl+0x7b/0xa0
+001:  __x64_sys_ioctl+0x73/0xb0
+001:  do_syscall_64+0x9e/0x380
+001:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+001: RIP: 0033:0x46817d
+001: Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+001: RSP: 002b:00007fa079a97c58 EFLAGS: 00000246
+001:  ORIG_RAX: 0000000000000010
+001: RAX: ffffffffffffffda RBX: 000000000057cf00 RCX: 000000000046817d
+001: RDX: 0000000020000000 RSI: 000000000000541c RDI: 0000000000000003
+001: RBP: 00000000004c4725 R08: 0000000000000000 R09: 0000000000000000
+001: R10: 0000000000000000 R11: 0000000000000246 R12: 000000000057cf00
+001: R13: 00007fff0f1471ff R14: 00007fff0f147390 R15: 00007fa079a97dc0
+001: 
+001: Allocated by task 10642:
+001:  save_stack+0x19/0x80
+001:  __kasan_kmalloc.constprop.5+0xc1/0xd0
+001:  set_selection_kernel+0x64a/0x1160
+001:  set_selection_user+0x8b/0xd0
+001:  tioclinux+0x2c3/0x420
+001:  vt_ioctl+0x17e1/0x2450
+001:  tty_ioctl+0x486/0x1350
+001:  do_vfs_ioctl+0x1a4/0xfe0
+001:  ksys_ioctl+0x7b/0xa0
+001:  __x64_sys_ioctl+0x73/0xb0
+001:  do_syscall_64+0x9e/0x380
+001:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+001: 
+001: Freed by task 10652:
+001:  save_stack+0x19/0x80
+001:  __kasan_slab_free+0x125/0x170
+001:  kfree+0x98/0x1f0
+001:  set_selection_kernel+0x674/0x1160
+001:  set_selection_user+0x8b/0xd0
+001:  tioclinux+0x2c3/0x420
+001:  vt_ioctl+0x17e1/0x2450
+001:  tty_ioctl+0x486/0x1350
+001:  do_vfs_ioctl+0x1a4/0xfe0
+001:  ksys_ioctl+0x7b/0xa0
+001:  __x64_sys_ioctl+0x73/0xb0
+001:  do_syscall_64+0x9e/0x380
+001:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+001: 
+001: The buggy address belongs to the object at ffff88806c16a200
+001: The buggy address is located 128 bytes inside of
+001: The buggy address belongs to the page:
+001: page:ffffea0001b05a00 refcount:1 mapcount:0 mapping:ffff88806cc02000 index:0x0
+001:  compound_mapcount: 0
+001: 
+001: flags: 0x100000000010200(slab|head)
+001: raw: 0100000000010200 dead000000000100 dead000000000200 ffff88806cc02000
+001: raw: 0000000000000000 00000000000f000f 00000001ffffffff 0000000000000000
+001: page dumped because: kasan: bad access detected
+001: 
+001: Memory state around the buggy address:
+001:  ffff88806c16a180: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+001:  ffff88806c16a200: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+001: >ffff88806c16a280: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+001:                    ^
+001:  ffff88806c16a300: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+001:  ffff88806c16a380: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+001: ==================================================================

@@ -1,0 +1,46 @@
+000: rcu: INFO: rcu_sched self-detected stall on CPU
+000: rcu: 	0-....: (1 GPs behind) idle=976/1/0x4000000000000002 softirq=213646/213647 fqs=4973 
+000: 	(t=21000 jiffies g=343301 q=147)
+000: NMI backtrace for cpu 0
+000: CPU: 0 PID: 12163 Comm: syz-executor.3 Not tainted 5.4.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  <IRQ>
+000:  dump_stack+0x95/0xce
+000:  nmi_cpu_backtrace.cold+0x55/0x94
+000:  nmi_trigger_cpumask_backtrace+0x155/0x19b
+000:  rcu_dump_cpu_stacks+0x15d/0x1a7
+000:  rcu_sched_clock_irq.cold+0x4c8/0x90d
+000:  update_process_times+0x24/0x60
+000:  tick_sched_handle+0x10f/0x150
+000:  tick_sched_timer+0x41/0x120
+000:  __hrtimer_run_queues+0x308/0x7c0
+000:  hrtimer_interrupt+0x2c9/0x6c0
+000:  smp_apic_timer_interrupt+0xd4/0x380
+000:  apic_timer_interrupt+0xf/0x20
+000:  </IRQ>
+000: RIP: 0010:check_memory_region+0x1a/0x1a0
+000: Code: 48 89 f2 be f8 00 00 00 e9 b3 6a ed 01 0f 1f 00 48 85 f6 0f 84 32 01 00 00 48 b8 ff ff ff ff ff 7f ff ff 41 54 0f b6 d2 55 53 <48> 39 c7 0f 86 08 01 00 00 4c 8d 5c 37 ff 48 89 fb 48 b8 00 00 00
+000: RSP: 0018:ffff88804519f8f8 EFLAGS: 00000202 ORIG_RAX: ffffffffffffff13
+000: RAX: ffff7fffffffffff RBX: ffff888045350000 RCX: ffffffff932d316d
+000: RDX: 0000000000000000 RSI: 0000000000000008 RDI: ffff88804453f9c0
+000: RBP: 0000000000000000 R08: 0000000000000001 R09: ffffed1008a6a003
+000: R10: ffffed1008a6a002 R11: ffff888045350017 R12: ffff88804453f800
+000: R13: ffff88806386ff20 R14: ffff88804453f9c0 R15: ffff888045350000
+000:  paste_selection+0x20d/0x340
+000:  tioclinux+0x3ac/0x440
+000:  vt_ioctl+0xa44/0x2440
+000:  tty_ioctl+0x66f/0x1310
+000:  do_vfs_ioctl+0xae6/0x1030
+000:  ksys_ioctl+0x76/0xa0
+000:  __x64_sys_ioctl+0x6f/0xb0
+000:  do_syscall_64+0x9a/0x330
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x46817d
+000: Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+000: RSP: 002b:00007f22c8bb8c58 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+000: RAX: ffffffffffffffda RBX: 000000000057cfa0 RCX: 000000000046817d
+000: RDX: 0000000020000000 RSI: 000000000000541c RDI: 0000000000000004
+000: RBP: 00000000004c4725 R08: 0000000000000000 R09: 0000000000000000
+000: R10: 0000000000000000 R11: 0000000000000246 R12: 000000000057cfa0
+000: R13: 00007ffc94ad026f R14: 00007ffc94ad0400 R15: 00007f22c8bb8dc0

@@ -1,0 +1,4 @@
+000: WARNING: stack recursion on stack type 4
+000: WARNING: can't dereference registers at 0000000017e9b68d for ip swapgs_restore_regs_and_return_to_usermode+0x79/0x80
+000: perf: interrupt took too long (31696 > 19598), lowering kernel.perf_event_max_sample_rate to 6000
+001: ISOFS: Unable to identify CD-ROM format.

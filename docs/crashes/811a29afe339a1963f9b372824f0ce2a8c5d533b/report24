@@ -1,0 +1,3 @@
+001: WARNING: stack recursion on stack type 4
+001: WARNING: can't dereference registers at 00000000ebcde6cf for ip swapgs_restore_regs_and_return_to_usermode+0x79/0x80
+001: perf: interrupt took too long (31027 > 24870), lowering kernel.perf_event_max_sample_rate to 6000

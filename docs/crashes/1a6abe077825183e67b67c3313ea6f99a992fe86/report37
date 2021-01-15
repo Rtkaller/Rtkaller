@@ -1,0 +1,37 @@
+000: Out of memory: Killed process 18075 (syz-executor.2) total-vm:85344kB, anon-rss:176kB, file-rss:34628kB, shmem-rss:0kB, UID:0 pgtables:116kB oom_score_adj:1000
+000: oom_reaper: reaped process 18075 (syz-executor.2), now anon-rss:0kB, file-rss:34624kB, shmem-rss:0kB
+000: systemd-journald[123]: /dev/kmsg buffer overrun, some messages lost.
+001: rcu: INFO: rcu_sched self-detected stall on CPU
+001: rcu: 	1-....: (12025 ticks this GP) idle=ffe/1/0x4000000000000002 softirq=853532/853532 fqs=4020 
+001: 	(t=21000 jiffies g=1032225 q=6907)
+001: NMI backtrace for cpu 1
+001: CPU: 1 PID: 93 Comm: printk Not tainted 5.6.0-rt1+ #2
+001: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+001: Call Trace:
+001:  <IRQ>
+001:  dump_stack+0x95/0xce
+001:  nmi_cpu_backtrace.cold+0x55/0x94
+001:  nmi_trigger_cpumask_backtrace+0x155/0x19b
+001:  rcu_dump_cpu_stacks+0x15d/0x1a7
+001:  rcu_sched_clock_irq.cold+0x4c8/0x90b
+001:  update_process_times+0x24/0x60
+001:  tick_sched_handle+0x10f/0x150
+001:  tick_sched_timer+0x41/0x120
+001:  __hrtimer_run_queues+0x308/0x7c0
+001:  hrtimer_interrupt+0x2c9/0x6c0
+001:  smp_apic_timer_interrupt+0xd4/0x380
+001:  apic_timer_interrupt+0xf/0x20
+001:  </IRQ>
+001: RIP: 0010:_raw_spin_unlock_irqrestore+0x2c/0x50
+001: Code: ec 10 48 b8 00 00 00 00 00 fc ff df 48 89 fa 48 c1 ea 03 0f b6 04 02 48 89 fa 83 e2 07 38 d0 7f 04 84 c0 75 0a c6 07 00 56 9d <48> 83 c4 10 c3 48 89 74 24 08 48 89 3c 24 e8 c1 e7 06 fe 48 8b 74
+001: RSP: 0018:ffff88806953fbc8 EFLAGS: 00000246 ORIG_RAX: ffffffffffffff13
+001: RAX: 0000000000000000 RBX: 1ffff1100d2a7f82 RCX: ffffffff9d97aa48
+001: RDX: 0000000000000000 RSI: 0000000000000246 RDI: ffffffffa12f6720
+001: RBP: ffffffffa12f6920 R08: 0000000000000001 R09: fffffbfff3f99381
+001: R10: fffffbfff3f99380 R11: ffffffff9fcc9c03 R12: 0000000000000005
+001: R13: 0000000000000000 R14: ffffffffa12f6740 R15: ffffffffa12f6720
+001:  serial8250_console_write+0x445/0xa20
+001:  printk_kthread_func+0x69f/0xd20
+001:  kthread+0x2ce/0x3d0
+001:  ret_from_fork+0x35/0x40
+000: systemd-journald[123]: /dev/kmsg buffer overrun, some messages lost.

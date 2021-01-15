@@ -1,0 +1,47 @@
+001: rcu: INFO: rcu_sched self-detected stall on CPU
+001: rcu: 	1-....: (20993 ticks this GP) idle=92e/1/0x4000000000000002 softirq=48823/48823 fqs=5250 
+001: 	(t=21001 jiffies g=59593 q=438)
+001: NMI backtrace for cpu 1
+001: CPU: 1 PID: 14642 Comm: syz-executor.0 Not tainted 5.6.0-rt1+ #2
+001: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+001: Call Trace:
+001:  <IRQ>
+001:  dump_stack+0x95/0xce
+001:  nmi_cpu_backtrace.cold+0x55/0x94
+001:  nmi_trigger_cpumask_backtrace+0x155/0x19b
+001:  rcu_dump_cpu_stacks+0x15d/0x1a7
+001:  rcu_sched_clock_irq.cold+0x4c8/0x90b
+001:  update_process_times+0x24/0x60
+001:  tick_sched_handle+0x10f/0x150
+001:  tick_sched_timer+0x41/0x120
+001:  __hrtimer_run_queues+0x308/0x7c0
+001:  hrtimer_interrupt+0x2c9/0x6c0
+001:  smp_apic_timer_interrupt+0xd4/0x380
+001:  apic_timer_interrupt+0xf/0x20
+001:  </IRQ>
+001: RIP: 0010:io_ring_ctx_wait_and_kill+0xb6/0x9c0
+001: Code: c3 eb 1c e8 1c d3 c6 ff f3 90 41 80 3c 24 00 0f 85 ee 07 00 00 48 83 bd d0 00 00 00 00 74 20 e8 00 d3 c6 ff f0 83 44 24 fc 00 <80> 3b 00 0f 85 b4 07 00 00 48 8b 85 e8 00 00 00 49 39 c5 74 c4 e8
+001: RSP: 0018:ffff888067d47a60 EFLAGS: 00000286 ORIG_RAX: ffffffffffffff13
+001: RAX: ffff88806a1d5900 RBX: ffffed100d62ab1d RCX: ffffffffb68f3380
+001: RDX: 0000000000000000 RSI: 0000000000000008 RDI: ffff88806b1559c0
+001: RBP: ffff88806b155800 R08: 0000000000000001 R09: ffffed100d62ab39
+001: R10: ffffed100d62ab38 R11: ffff88806b1559c7 R12: ffffed100d62ab1a
+001: R13: ffff88806b1558e8 R14: ffff88806b1558d0 R15: ffff88806ce467a0
+001:  io_uring_release+0x3e/0x50
+001:  __fput+0x223/0x6d0
+001:  task_work_run+0x144/0x1c0
+001:  do_exit+0x970/0x2750
+001:  do_group_exit+0xee/0x310
+001:  get_signal+0x3bd/0x1b60
+001:  do_signal+0x88/0x1350
+001:  exit_to_usermode_loop+0xc0/0x180
+001:  do_syscall_64+0x2bb/0x390
+001:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+001: RIP: 0033:0x46817d
+001: Code: Bad RIP value.
+001: RSP: 002b:00007efe8b852c58 EFLAGS: 00000246 ORIG_RAX: 00000000000001a9
+001: RAX: 0000000000000007 RBX: 000000000057cf00 RCX: 000000000046817d
+001: RDX: 0000000000000000 RSI: 0000000020000140 RDI: 000000000000638b
+001: RBP: 00000000004c4725 R08: 0000000000000000 R09: 0000000000000000
+001: R10: 0000000000000000 R11: 0000000000000246 R12: 000000000057cf00
+001: R13: 00007ffc6edc991f R14: 00007ffc6edc9ab0 R15: 00007efe8b852dc0

@@ -1,0 +1,74 @@
+001: ==================================================================
+001: BUG: KASAN: slab-out-of-bounds in vcs_scr_readw+0x97/0xa0
+001: Read of size 2 at addr ffff888064c5d1c8 by task syz-executor.3/10765
+001: 
+001: CPU: 1 PID: 10765 Comm: syz-executor.3 Not tainted 5.2.0-rt1+ #2
+001: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+001: Call Trace:
+001:  dump_stack+0x79/0xba
+001:  print_address_description+0x60/0x229
+001:  __kasan_report.cold.4+0x17/0x32
+001:  kasan_report+0x12/0x20
+001:  vcs_scr_readw+0x97/0xa0
+001:  vcs_write+0x4fc/0xaa0
+001:  __vfs_write+0x7c/0x100
+001:  vfs_write+0x16c/0x4a0
+001:  ksys_write+0xfd/0x200
+001:  do_syscall_64+0x9e/0x380
+001:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+001: RIP: 0033:0x46817d
+001: Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+001: RSP: 002b:00007f2b3c715c58 EFLAGS: 00000246
+001:  ORIG_RAX: 0000000000000001
+001: RAX: ffffffffffffffda RBX: 000000000057cf00 RCX: 000000000046817d
+001: RDX: 0000000000000012 RSI: 0000000020000080 RDI: 0000000000000003
+001: RBP: 00000000004c4725 R08: 0000000000000000 R09: 0000000000000000
+001: R10: 0000000000000000 R11: 0000000000000246 R12: 000000000057cf00
+001: R13: 00007ffd0c54a53f R14: 00007ffd0c54a6d0 R15: 00007f2b3c715dc0
+001: 
+001: Allocated by task 9919:
+001:  save_stack+0x19/0x80
+001:  __kasan_kmalloc.constprop.5+0xc1/0xd0
+001:  vc_do_resize+0x1fb/0x12c0
+001:  vt_ioctl+0x10d2/0x2450
+001:  tty_ioctl+0x486/0x1350
+001:  do_vfs_ioctl+0x1a4/0xfe0
+001:  ksys_ioctl+0x7b/0xa0
+001:  __x64_sys_ioctl+0x73/0xb0
+001:  do_syscall_64+0x9e/0x380
+001:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+001: 
+001: Freed by task 9622:
+001:  save_stack+0x19/0x80
+001:  __kasan_slab_free+0x125/0x170
+001:  kfree+0x98/0x1f0
+001:  __netlink_kernel_create+0x72e/0x890
+001:  audit_net_init+0x109/0x1f0
+001:  ops_init+0xa9/0x330
+001:  setup_net+0x2ef/0x680
+001:  copy_net_ns+0x18c/0x260
+001:  create_new_namespaces+0x508/0x710
+001:  copy_namespaces+0x13a/0x1d0
+001:  copy_process.part.59+0x2486/0x5dd0
+001:  _do_fork+0x194/0x960
+001:  do_syscall_64+0x9e/0x380
+001:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+001: 
+001: The buggy address belongs to the object at ffff888064c5d1b0
+001: The buggy address is located 24 bytes inside of
+001: The buggy address belongs to the page:
+001: page:ffffea0001931740 refcount:1 mapcount:0 mapping:ffff888068401a00 index:0xffff888064c5d660
+001: 
+001: flags: 0x100000000000200(slab)
+001: raw: 0100000000000200 ffffea0001954f88 ffffea00019e10c8 ffff888068401a00
+001: raw: ffff888064c5d660 0000000000550042 00000001ffffffff 0000000000000000
+001: page dumped because: kasan: bad access detected
+001: 
+001: Memory state around the buggy address:
+001:  ffff888064c5d080: fc fc 00 00 00 fc fc fc fb fb fb fb fc fc fb fb
+001:  ffff888064c5d100: fb fb fc fc 00 00 00 fc fc fc fb fb fb fb fc fc
+001: >ffff888064c5d180: fb fb fb fb fc fc 00 00 00 fc fc fc fb fb fb fb
+001:                                               ^
+001:  ffff888064c5d200: fc fc 00 00 00 00 fc fc fb fb fb fb fc fc 00 00
+001:  ffff888064c5d280: 00 fc fc fc fb fb fb fb fc fc fb fb fb fb fc fc
+001: ==================================================================

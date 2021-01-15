@@ -1,0 +1,75 @@
+001: rcu: INFO: rcu_preempt detected stalls on CPUs/tasks:
+001: rcu: 	Tasks blocked on level-0 rcu_node (CPUs 0-1):
+001:  P5443
+001: 
+001: rcu: 	0-...!: (8 ticks this GP) idle=0fe/1/0x4000000000000002 softirq=22329/22331 fqs=9 
+001: 	(detected by 1, t=21002 jiffies, g=31413, q=1)
+000: NMI backtrace for cpu 0
+000: CPU: 0 PID: 5443 Comm: syz-executor.2 Not tainted 5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: RIP: 0010:queued_spin_lock_slowpath+0x170/0x9c0
+000: Code: 8b 84 24 a8 00 00 00 65 48 33 04 25 28 00 00 00 0f 85 37 07 00 00 48 81 c4 b0 00 00 00 5b 5d 41 5c 41 5d 41 5e 41 5f c3 f3 90 <e9> 74 ff ff ff 8b 44 24 70 3d 00 01 00 00 0f 84 e4 00 00 00 30 c0
+000: RSP: 0018:ffff88806d209b98 EFLAGS: 00000002
+000: 
+000: RAX: 0000000000000000 RBX: ffff88806c67cc48 RCX: ffffffff8782ff56
+000: RDX: 0000000000000000 RSI: 0000000000000004 RDI: ffff88806c67cc48
+000: RBP: 1ffff1100da41375 R08: ffffed100d8cf98a R09: ffffed100d8cf989
+000: R10: ffffed100d8cf989 R11: ffff88806c67cc4b R12: 0000000000000001
+000: R13: 0000000000000003 R14: ffffed100d8cf989 R15: 0000000000000001
+000: FS:  00007fa128ce9700(0000) GS:ffff88806d200000(0000) knlGS:0000000000000000
+000: CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+000: CR2: 00007fff55d35b48 CR3: 000000006a59a004 CR4: 0000000000760ef0
+000: DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+000: DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+000: PKRU: 55555554
+000: Call Trace:
+000:  <IRQ>
+000:  _raw_spin_lock_irqsave+0xd8/0xe0
+000:  try_to_wake_up+0x7a/0x1360
+000:  rcu_read_unlock_special+0xf6/0x110
+000:  __rcu_read_unlock+0x109/0x110
+000:  update_curr+0x26d/0x6b0
+000:  enqueue_task_fair+0x1a3d/0x49a0
+000:  activate_task+0x1bb/0x2a0
+000:  ttwu_do_activate.isra.83+0x82/0xb0
+000:  try_to_wake_up+0x4da/0x1360
+000:  irq_exit+0xca/0xf0
+000:  irq_work_interrupt+0xf/0x20
+000:  </IRQ>
+000: RIP: 0010:preempt_schedule+0x1c/0xa0
+000: Code: e8 69 ee 16 fe eb 98 e8 02 ef 16 fe eb d8 f3 0f 1e fa 53 65 8b 05 0c 7a 5d 76 a9 ff ff ff 7f 74 02 5b c3 9c 58 f6 c4 02 74 f7 <65> 48 8b 1c 25 80 ed 01 00 48 b8 00 00 00 00 00 fc ff df 48 89 da
+000: RSP: 0018:ffff8880435878f8 EFLAGS: 00000202
+000:  ORIG_RAX: ffffffffffffff09
+000: RAX: 0000000000000246 RBX: 0000000000000000 RCX: ffffffff81624dc5
+000: RDX: 000000000000135a RSI: ffffc90001638000 RDI: ffffffff8b459ba0
+000: RBP: ffff888043587950 R08: ffffed10086b0f22 R09: ffffed10086b0f21
+000: R10: ffffed10086b0f21 R11: 0000000000000003 R12: ffff8880639bb850
+000: R13: 0000000000000000 R14: dffffc0000000000 R15: ffff888043587d60
+000:  ___preempt_schedule+0x16/0x18
+000:  d_alloc_parallel+0x89a/0x1120
+000:  path_openat+0x19db/0x4100
+000:  do_filp_open+0x19b/0x270
+000:  do_sys_open+0x2cb/0x450
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x46817d
+000: Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+000: RSP: 002b:00007fa128ce8c58 EFLAGS: 00000246
+000:  ORIG_RAX: 0000000000000055
+000: RAX: ffffffffffffffda RBX: 000000000057cf00 RCX: 000000000046817d
+000: RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000020000000
+000: RBP: 00000000004c4725 R08: 0000000000000000 R09: 0000000000000000
+000: R10: 0000000000000000 R11: 0000000000000246 R12: 000000000057cf00
+000: R13: 00007ffde5bd037f R14: 00007ffde5bd0510 R15: 00007fa128ce8dc0
+001:   running task    
+001: 26288  5443    450 0x80004008
+001: Call Trace:
+001: rcu: rcu_preempt kthread starved for 20966 jiffies! g31413 f0x0 RCU_GP_WAIT_FQS(5) ->state=0x402 ->cpu=1
+001: rcu: RCU grace-period kthread stack dump:
+001: 30128    11      2 0x80004000
+001: Call Trace:
+001:  schedule+0xc5/0x280
+001:  schedule_timeout+0x3cf/0xa70
+001:  rcu_gp_kthread+0xee1/0x31d0
+001:  kthread+0x2ff/0x3c0
+001:  ret_from_fork+0x35/0x40

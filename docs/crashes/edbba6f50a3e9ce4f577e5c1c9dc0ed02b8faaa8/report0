@@ -1,0 +1,39 @@
+000: general protection fault: 0000 [#1] SMP KASAN PTI
+000: CPU: 0 PID: 88 Comm: kworker/u4:2 Not tainted 5.4.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Workqueue: netns cleanup_net
+000: 
+000: RIP: 0010:unregister_sysctl_table+0x39/0x170
+000: Code: ec 08 e8 3a bd c0 ff 48 85 ed 0f 84 86 00 00 00 e8 2c bd c0 ff 48 8d 7d 20 48 b8 00 00 00 00 00 fc ff df 48 89 fa 48 c1 ea 03 <80> 3c 02 00 0f 85 00 01 00 00 4c 8b 65 20 4d 85 e4 74 39 e8 ff bc
+000: RSP: 0018:ffff8880667af8d8 EFLAGS: 00010203
+000: 
+000: RAX: dffffc0000000000 RBX: ffff888061131cc0 RCX: ffffffffb8949394
+000: RDX: 00ed00f500eee0ea RSI: ffff888061131cc0 RDI: 076807a807770754
+000: RBP: 076807a807770734 R08: 0000000000000001 R09: ffffed100ccf5f14
+000: R10: ffffed100ccf5f13 R11: 0000000000000003 R12: 0000000000000002
+000: R13: ffff8880680b0000 R14: 0000000000000006 R15: 0000000000000000
+000: FS:  0000000000000000(0000) GS:ffff888068800000(0000) knlGS:0000000000000000
+000: CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+000: CR2: 00005616d8df1cd8 CR3: 000000005fee4001 CR4: 0000000000760ef0
+000: DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+000: DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000600
+000: PKRU: 55555554
+000: Call Trace:
+000:  __devinet_sysctl_unregister.isra.0+0x5f/0xa0
+000:  devinet_sysctl_unregister+0x88/0xe0
+000:  inetdev_event+0x285/0x1140
+000:  notifier_call_chain+0xd8/0x160
+000:  rollback_registered_many+0x7ac/0xce0
+000:  unregister_netdevice_many.part.0+0x18/0x280
+000:  unregister_netdevice_many+0x36/0x50
+000:  sit_exit_batch_net+0x2e2/0x3f0
+000:  ops_exit_list.isra.0+0xfd/0x150
+000:  cleanup_net+0x43b/0x840
+000:  process_one_work+0x880/0x1210
+000:  worker_thread+0x97/0xf90
+000:  kthread+0x2ce/0x3d0
+000:  ret_from_fork+0x35/0x40
+000: Modules linked in:
+000: 
+000: Dumping ftrace buffer:
+000:    (ftrace buffer empty)

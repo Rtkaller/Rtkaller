@@ -1,0 +1,1736 @@
+001: cgroup1: Unknown subsys name 'perf_event'
+001: cgroup1: Unknown subsys name 'net_cls'
+000: BUG: Bad page map in process systemd-udevd  pte:11100000101 pmd:4f469067
+000: addr:000000008aaff00f vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:5e
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Not tainted 5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:506b00000121 pmd:4f469067
+000: addr:00000000034db9c9 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:5f
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:00040390 pmd:4f469067
+000: addr:00000000806f4fc8 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:60
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 2800cc7fffe96b0c
+000: BUG: Bad page map in process systemd-udevd  pte:566700002d29e628 pmd:4f469067
+000: addr:00000000aa789e24 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:61
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3ffffffa01633
+000: BUG: Bad page map in process systemd-udevd  pte:bfd39848 pmd:4f469067
+000: addr:0000000009ac4331 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:65
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11200000102 pmd:4f469067
+000: addr:0000000096bc3270 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:66
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:00000321 pmd:4f469067
+000: addr:000000009d298265 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:67
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:000402c1 pmd:4f469067
+000: addr:000000001a2bad31 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:68
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:bfd3a390 pmd:4f469067
+000: addr:00000000bd0de408 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:6d
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11300000103 pmd:4f469067
+000: addr:000000002eae12dc vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:6e
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:fb2000000000521 pmd:4f469067
+000: addr:00000000e66c4988 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:6f
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+001: ata1.00: exception Emask 0x0 SAct 0x0 SErr 0x0 action 0x0
+000: Call Trace:
+001: ata1.00: failed command: READ DMA
+000:  dump_stack+0x79/0xba
+001: ata1.00: cmd c8/00:00:00:00:00/00:00:00:00:00/e0 tag 0
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+001: ata1.00: status: { DRDY }
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:0004020f pmd:4f469067
+000: addr:000000009ffae7dc vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:70
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:8600fa9bb1dcf83 pmd:4f469067
+000: addr:00000000fed252d2 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:71
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:8c59a390 pmd:4f469067
+000: addr:000000006fea9cbf vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:75
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11400000104 pmd:4f469067
+000: addr:00000000f01dd28e vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:76
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3fffffffffdff
+000: BUG: Bad page map in process systemd-udevd  pte:00040014 pmd:4f469067
+000: addr:00000000706e45c3 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:78
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:c0eb1febddfccf83 pmd:4f469067
+000: addr:000000008a987515 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:79
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:60c1a390 pmd:4f469067
+000: addr:00000000fb04292c vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:7d
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11500000105 pmd:4f469067
+000: addr:00000000057bbbd0 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:7e
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3fffffffffd7f
+000: BUG: Bad page map in process systemd-udevd  pte:00050000 pmd:4f469067
+000: addr:0000000093bddb8a vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:80
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:0000a390 pmd:4f469067
+000: addr:000000008deecff7 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:85
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11600000106 pmd:4f469067
+000: addr:00000000d6dc2fa0 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:86
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:200018fa00000b21 pmd:4f469067
+000: addr:0000000031fb6de7 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:87
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3fffffffffd7f
+000: BUG: Bad page map in process systemd-udevd  pte:00050000 pmd:4f469067
+000: addr:0000000067675e72 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:88
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:708c200000004509 pmd:4f469067
+000: addr:00000000d7468dc3 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:89
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:00000f11 pmd:4f469067
+000: addr:00000000679d0f49 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:8d
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11700000107 pmd:4f469067
+000: addr:0000000030f81d57 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:8e
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:2000430b00000d21 pmd:4f469067
+000: addr:0000000098795627 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:8f
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3fffffffffd7f
+000: BUG: Bad page map in process systemd-udevd  pte:00050000 pmd:4f469067
+000: addr:00000000e34403d4 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:90
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 5c02ff6fffffffb7
+000: BUG: Bad page map in process systemd-udevd  pte:ba01200000009042 pmd:4f469067
+000: addr:000000008d728aa2 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:91
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:00008e99 pmd:4f469067
+000: addr:00000000a88204dd vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:95
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11800000108 pmd:4f469067
+000: addr:0000000008116052 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:96
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:20007cb600000f21 pmd:4f469067
+000: addr:00000000c500ec6f vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:97
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3fffffffffd7f
+000: BUG: Bad page map in process systemd-udevd  pte:00050000 pmd:4f469067
+000: addr:00000000264507f5 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:98
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:caef2000000075e2 pmd:4f469067
+000: addr:00000000db3282cc vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:99
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:00002e0f pmd:4f469067
+000: addr:0000000018b3dfd6 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:9d
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11900000109 pmd:4f469067
+000: addr:000000008a59489c vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:9e
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:2000400000001121 pmd:4f469067
+000: addr:00000000cf75de9b vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:9f
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3fffffffffd7f
+000: BUG: Bad page map in process systemd-udevd  pte:00050000 pmd:4f469067
+000: addr:000000007031cae7 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:a0
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:3241200000001700 pmd:4f469067
+000: addr:00000000e031cd11 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:a1
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:0000f15f pmd:4f469067
+000: page:ffffea00000003c0 refcount:1 mapcount:-1 mapping:0000000000000000 index:0x0
+000: 
+000: flags: 0x1008(dirty|reserved)
+000: raw: 0000000000001008 ffffea00000003c8 ffffea00000003c8 0000000000000000
+000: raw: 0000000000000000 0000000000000000 00000001fffffffe 0000000000000000
+000: page dumped because: bad pte
+000: addr:00000000abcb1c69 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:a5
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xce7/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11a0000010a pmd:4f469067
+000: addr:000000008ee080fe vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:a6
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:20007eff00001321 pmd:4f469067
+000: addr:00000000cec21eeb vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:a7
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3fffffffffc7f
+000: BUG: Bad page map in process systemd-udevd  pte:00070000 pmd:4f469067
+000: addr:000000003f6498ae vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:a8
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 200369efffffffff
+000: BUG: Bad page map in process systemd-udevd  pte:412c200000000000 pmd:4f469067
+000: addr:000000009477b8d2 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:a9
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11b0000010b pmd:4f469067
+000: addr:00000000976bba2f vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:ae
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:2000800000001521 pmd:4f469067
+000: addr:00000000808d4414 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:af
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3fffffffffc7f
+000: BUG: Bad page map in process systemd-udevd  pte:00070000 pmd:4f469067
+000: addr:00000000e3e87f2e vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:b0
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 5c03e56fffffffff
+000: BUG: Bad page map in process systemd-udevd  pte:b835200000000000 pmd:4f469067
+000: addr:00000000303ffa71 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:b1
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11c0000010c pmd:4f469067
+000: addr:0000000099c02847 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:b6
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:2000800000001721 pmd:4f469067
+000: addr:000000007de5dd91 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:b7
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3fffffffffc7f
+000: BUG: Bad page map in process systemd-udevd  pte:00070000 pmd:4f469067
+000: addr:000000006fa101ea vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:b8
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry c011befffffffff
+000: BUG: Bad page map in process systemd-udevd  pte:1dc8200000000000 pmd:4f469067
+000: addr:000000007bd4afe2 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:b9
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11d0000010d pmd:4f469067
+000: addr:00000000683fda9b vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:be
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:2000800000001921 pmd:4f469067
+000: addr:00000000b079f977 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:bf
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3fffffffffc7f
+000: BUG: Bad page map in process systemd-udevd  pte:00070000 pmd:4f469067
+000: addr:000000005a5ee776 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:c0
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 300011efffffffff
+000: BUG: Bad page map in process systemd-udevd  pte:67dc200000000000 pmd:4f469067
+000: addr:00000000ab3a2157 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:c1
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:11e0000010e pmd:4f469067
+000: addr:0000000056d370a7 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:c6
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad page map in process systemd-udevd  pte:2000800000001b21 pmd:4f469067
+000: addr:000000008a149312 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:c7
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  _vm_normal_page+0xdd/0x270
+000:  unmap_page_range+0x8d1/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 3fffffffffc7f
+000: BUG: Bad page map in process systemd-udevd  pte:00070000 pmd:4f469067
+000: addr:000000005241dae1 vm_flags:00000070 anon_vma:00000000a0d1b7f5 mapping:0000000030397c70 index:c8
+000: file:libdl-2.24.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  print_bad_pte.cold.120+0x2c9/0x2f2
+000:  unmap_page_range+0xda3/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: swap_info_get: Bad swap file entry 74005d6fffffffff
+000: swap_info_get: Bad swap file entry 3fffffffffc7f
+000: swap_info_get: Bad swap file entry 1401426fffffffff
+000: swap_info_get: Bad swap file entry 3fffffffffd7f
+000: swap_info_get: Bad swap file entry 3fffffffffff0
+000: BUG: Bad page state in process systemd-udevd  pfn:0000f
+000: page:ffffea00000003c0 refcount:0 mapcount:-1 mapping:0000000000000000 index:0x0
+000: 
+000: flags: 0x0()
+000: raw: 0000000000000000 dead000000000100 dead000000000200 0000000000000000
+000: raw: 0000000000000000 0000000000000000 00000000fffffffe 0000000000000000
+000: page dumped because: nonzero mapcount
+000: Modules linked in:
+000: 
+000: CPU: 0 PID: 30466 Comm: systemd-udevd Tainted: G    B             5.2.0-rt1+ #2
+000: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+000: Call Trace:
+000:  dump_stack+0x79/0xba
+000:  bad_page.cold.124+0xe8/0x129
+000:  isolate_pcp_pages+0x383/0x4d0
+000:  free_unref_page_list+0x48b/0xc60
+000:  release_pages+0x5ca/0x920
+000:  tlb_flush_mmu+0xe5/0x590
+000:  unmap_page_range+0xfc5/0x1580
+000:  unmap_single_vma+0x146/0x2b0
+000:  unmap_vmas+0x15e/0x260
+000:  exit_mmap+0x249/0x450
+000:  mmput+0x59/0x300
+000:  do_exit+0x678/0x2a90
+000:  do_group_exit+0x104/0x320
+000:  __x64_sys_exit_group+0x3e/0x50
+000:  do_syscall_64+0x9e/0x380
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x7f0e08adb618
+000: Code: Bad RIP value.
+000: RSP: 002b:00007ffd7b455de8 EFLAGS: 00000202
+000:  ORIG_RAX: 00000000000000e7
+000: RAX: ffffffffffffffda RBX: 00007ffd7b455eb0 RCX: 00007f0e08adb618
+000: RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+000: RBP: 00007ffd7b455f60 R08: 00000000000000e7 R09: fffffffffffffe50
+000: R10: 000055c49f716c90 R11: 0000000000000202 R12: 0000000000000000
+000: R13: 0000000000000000 R14: 0000000000000003 R15: 000000000000000e
+000: BUG: Bad rss-counter state mm:0000000002773238 idx:0 val:-2
+000: BUG: Bad rss-counter state mm:0000000002773238 idx:1 val:2
+000: BUG: Bad rss-counter state mm:0000000002773238 idx:2 val:-23

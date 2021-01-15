@@ -1,0 +1,5 @@
+# {Threaded:false Collide:false Repeat:false RepeatTimes:0 Procs:1 Sandbox: Fault:false FaultCall:-1 FaultNth:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false USB:false VhciInjection:false UseTmpDir:false HandleSegv:false Repro:false Trace:false}
+r0 = creat(&(0x7f0000000000)='./file0\x00', 0x0)
+r1 = epoll_create1(0x0)
+r2 = dup3(r0, r1, 0x0)
+mount$9p_fd(0x0, &(0x7f00000000c0)='./file0\x00', &(0x7f0000000100)='9p\x00', 0x80c, &(0x7f0000000140)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r0}, 0x2c, {[{@cache_loose='cache=loose'}, {@cachetag={'cachetag', 0x3d, '$'}}, {@fscache='fscache'}], [{@fowner_eq={'fowner'}}]}})

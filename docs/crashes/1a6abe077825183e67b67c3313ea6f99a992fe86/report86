@@ -1,0 +1,51 @@
+000: rcu: INFO: rcu_sched detected stalls on CPUs/tasks:
+000: 	(detected by 0, t=21002 jiffies, g=26185, q=3)
+000: rcu: All QSes seen, last rcu_sched kthread activity 21002 (4294738506-4294717504), jiffies_till_next_fqs=3, root ->qsmask 0x0
+000: syz-executor.0  R  running task    27512  7988    427 0x8000400a
+000: Call Trace:
+000:  <IRQ>
+000:  sched_show_task.cold+0x243/0x2b1
+000:  rcu_sched_clock_irq.cold+0x853/0x90b
+000:  update_process_times+0x24/0x60
+000:  tick_sched_handle+0x10f/0x150
+000:  tick_sched_timer+0x41/0x120
+000:  __hrtimer_run_queues+0x308/0x7c0
+000:  hrtimer_interrupt+0x2c9/0x6c0
+000:  smp_apic_timer_interrupt+0xd4/0x380
+000:  apic_timer_interrupt+0xf/0x20
+000:  </IRQ>
+000: RIP: 0010:io_ring_ctx_wait_and_kill+0x9b/0x9c0
+000: Code: f4 48 b8 00 00 00 00 00 fc ff df 4c 89 eb 49 c1 ec 03 48 c1 eb 03 49 01 c4 48 01 c3 eb 1c e8 1c d3 c6 ff f3 90 41 80 3c 24 00 <0f> 85 ee 07 00 00 48 83 bd d0 00 00 00 00 74 20 e8 00 d3 c6 ff f0
+000: RSP: 0018:ffff88806304fa60 EFLAGS: 00000246 ORIG_RAX: ffffffffffffff13
+000: RAX: ffff8880679c1640 RBX: ffffed100c30261d RCX: ffffffff82ef3364
+000: RDX: 0000000000000000 RSI: 0000000000000008 RDI: ffff8880618131c0
+000: RBP: ffff888061813000 R08: 0000000000000001 R09: ffffed100c302639
+000: R10: ffffed100c302638 R11: ffff8880618131c7 R12: ffffed100c30261a
+000: R13: ffff8880618130e8 R14: ffff8880618130d0 R15: ffff8880682467a0
+000:  io_uring_release+0x3e/0x50
+000:  __fput+0x223/0x6d0
+000:  task_work_run+0x144/0x1c0
+000:  do_exit+0x970/0x2750
+000:  do_group_exit+0xee/0x310
+000:  get_signal+0x3bd/0x1b60
+000:  do_signal+0x88/0x1350
+000:  exit_to_usermode_loop+0xc0/0x180
+000:  do_syscall_64+0x2bb/0x390
+000:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+000: RIP: 0033:0x46817d
+000: Code: Bad RIP value.
+000: RSP: 002b:00007fe722d7cc58 EFLAGS: 00000246 ORIG_RAX: 00000000000001a9
+000: RAX: fffffffffffffffc RBX: 000000000057cf00 RCX: 000000000046817d
+000: RDX: 0000000000000000 RSI: 00000000200000c0 RDI: 000000000000719d
+000: RBP: 00000000004c4725 R08: 0000000000000000 R09: 0000000000000000
+000: R10: 0000000000000000 R11: 0000000000000246 R12: 000000000057cf00
+000: R13: 00007ffe00ea8a5f R14: 00007ffe00ea8bf0 R15: 00007fe722d7cdc0
+000: rcu: rcu_sched kthread starved for 21002 jiffies! g26185 f0x2 RCU_GP_WAIT_FQS(5) ->state=0x0 ->cpu=0
+000: rcu: RCU grace-period kthread stack dump:
+000: rcu_sched       R  running task    29832    10      2 0x80004000
+000: Call Trace:
+000:  schedule+0xc6/0x290
+000:  schedule_timeout+0x2f3/0x860
+000:  rcu_gp_kthread+0x9e6/0x20c0
+000:  kthread+0x2ce/0x3d0
+000:  ret_from_fork+0x35/0x40
