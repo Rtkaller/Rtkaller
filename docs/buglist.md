@@ -1,3 +1,5 @@
+For more detail and reproduction of the vulnerabilities, download the [log report](https://github.com/Rtkaller/Rtkaller/tree/main/docs/crashes)
+
 | RTOS Version         | Real-time Patch     | Vulnerability Type       | Module                                  | Rtkaller | Syzkaller | Pervious Unknown |
 |----------------------|---------------------|--------------------------|-----------------------------------------|----------|-----------|------------------|
 | FreeRTOS-5.4.2       |                     | SIGSEGV                  | task/xTaskIncrementTick                 | ✓        |           | ✓                |
@@ -51,3 +53,6 @@
 |                      |                     | use-after-free           | fs/ext4\_xattr\_set\_entry              | ✓        | ✓         |                  |
 |                      |                     | use-after-free           | fs/ext4\_expand\_extra\_isize           | ✓        | ✓         |                  |
 |                      |                     | use-after-free           | drivers/n\_tty\_receive\_buf\_common    | ✓        | ✓         |                  |
+
+
+
