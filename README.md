@@ -12,7 +12,7 @@ Most of the documentation at this moment is related to the rt-linux kernel.
 
 - [How Rtkaller works](docs/features.md)
  
-- [Experiments](experiments/result.md)
+- [Experiments results](experiments/result.md)
 
 - [Reported bugs](docs/buglist.md)
 
