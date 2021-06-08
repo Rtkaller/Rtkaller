@@ -1,6 +1,6 @@
 Here we list the overall experiments results over 8 versions of rt-linux:
 <div align="center">
-  <img src="https://github.com/Rtkaller/Rtkaller/blob/main/experiments/result.png" height="300px" alt="图片说明" >
+  <img src="https://github.com/Rtkaller/Rtkaller/blob/main/experiments/result.png" height="500px" alt="图片说明" >
 </div>
 
 Detailed results of each experiments can be found below:
