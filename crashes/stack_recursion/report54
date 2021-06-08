@@ -1,6 +1,0 @@
-000: SELinux: unrecognized netlink message: protocol=0 nlmsg_type=297 sclass=netlink_route_socket pid=9160 comm=syz-executor.0
-000: WARNING: stack recursion on stack type 4
-000: WARNING: can't dereference registers at 0000000001a56447 for ip swapgs_restore_regs_and_return_to_usermode+0x51/0x80
-001: SELinux: unrecognized netlink message: protocol=0 nlmsg_type=297 sclass=netlink_route_socket pid=9173 comm=syz-executor.0
-001: syz-executor.0 (440) used greatest stack depth: 24976 bytes left
-000: syz-executor.1 (444) used greatest stack depth: 24848 bytes left

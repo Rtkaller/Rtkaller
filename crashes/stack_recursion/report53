@@ -1,7 +1,0 @@
-000: perf: interrupt took too long (10234 > 10226), lowering kernel.perf_event_max_sample_rate to 19000
-000: perf: interrupt took too long (12837 > 12792), lowering kernel.perf_event_max_sample_rate to 15000
-000: perf: interrupt took too long (16047 > 16046), lowering kernel.perf_event_max_sample_rate to 12000
-000: WARNING: stack recursion on stack type 4
-000: WARNING: can't dereference registers at 000000006c338c52 for ip swapgs_restore_regs_and_return_to_usermode+0x79/0x80
-000: EXT4-fs warning (device sda): verify_group_input:131: Cannot add at group 75 (only 16 groups)
-000: syz-executor.0 (426) used greatest stack depth: 24976 bytes left
