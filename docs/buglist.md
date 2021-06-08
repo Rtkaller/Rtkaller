@@ -53,6 +53,7 @@ For more detail and reproduction of the vulnerabilities, download the [log repor
 |                      |                     | use-after-free           | fs/ext4\_xattr\_set\_entry              | ✓        | ✓         |                  |
 |                      |                     | use-after-free           | fs/ext4\_expand\_extra\_isize           | ✓        | ✓         |                  |
 |                      |                     | use-after-free           | drivers/n\_tty\_receive\_buf\_common    | ✓        | ✓         |                  |
-
-
+|                      |                     | use-after-free           | drivers/n\_tty\_receive\_buf\_common    |          |           |                  |
+| rt-linux-3.10        |                     | Null ptr deref           | dev_remove_pack                         | ✓        |           | ✓                |
+|                      |                     | Null ptr deref           | intel_shared_reg_put_constraints        | ✓        |           | ✓                |
 
